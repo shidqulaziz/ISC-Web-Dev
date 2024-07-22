@@ -17,5 +17,8 @@
     "url": "https://github.com/shidqulaziz/ISC-Web-Dev/issues"
   },
   "homepage": "https://github.com/shidqulaziz/ISC-Web-Dev#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
