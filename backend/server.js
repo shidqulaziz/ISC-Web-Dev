@@ -23,8 +23,8 @@ app.get("/register", (req, res) => {
   res.render("register");
 });
 
-// Menangani permintaan POST untuk '/register'
-app.post("/register", (req, res) => {
+// Menangani permintaan GET untuk '/register'
+app.get("/register", (req, res) => {
   const { Name, emailAddress, password, retypePassword } = req.body;
   console.log(`Name: ${Name}, Email Address: ${emailAddress}, Password: ${password}, Retype Password: ${retypePassword}`);
   res.send("Pendaftaran berhasil!");
