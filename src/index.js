@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Initialize carousel position
   updateCarousel();
 });
 

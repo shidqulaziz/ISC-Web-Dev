@@ -6,10 +6,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
-nav,
-.footer,
-.section-bg {
-  background-color: #000;
+.section {
+  height: 100vh;
 }
 
 .container {
