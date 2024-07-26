@@ -124,3 +124,38 @@ button svg {
   background: rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease;
 } */
+
+#container-box {
+  display: row;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: end;
+  height: 100vh; /* Adjust this height according to your need */
+  padding: 0;
+}
+
+#container-box div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  position: relative;
+}
+
+#container-box div:nth-child(1) {
+  grid-row: 1;
+}
+
+#container-box div:nth-child(2) {
+  grid-row: 2;
+  width: 300px;
+}
+
+#container-box div:nth-child(3) {
+  grid-row: 3;
+  width: 400px;
+}
