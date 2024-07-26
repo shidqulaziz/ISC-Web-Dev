@@ -7,11 +7,12 @@
     <link href="src/style.css" rel="stylesheet" />
   </head>
   <body href="bg-black text-gray-300">
-    <!-- Hero Section with Navigation -->
+    <!-- Hero Section -->
     <section id="home" class="relative h-screen bg-cover bg-center hero-image">
       <div class="absolute inset-0 bg-black opacity-50"></div>
+      <img src="img/home.jpg" alt="Home Image" class="w-full h-full object-cover rounded" />
 
-      <!-- Navigation -->
+      <!-- Navigation and other content -->
       <nav class="p-4 absolute top-0 left-0 right-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
           <div class="text-white font-bold text-xl">Energy</div>
@@ -31,27 +32,30 @@
           </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4">
-          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('home')">Home</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('about')">About Us</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('services')">Services</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('news')">News</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('contact')">Contact Us</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('home')">Home</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('about')">About Us</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('services')">Services</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('news')">News</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('contact')">Contact Us</a>
         </div>
       </nav>
-
-      <img src="img/VB-WEBINAR SKILHUB X HIMAIF UBSI-01.jpg" alt="Home Image" class="w-full h-auto rounded" />
     </section>
 
+    <!-- Blur Effect Container -->
+    <div id="blur-effect" class="fixed inset-0 bg-black opacity-0 transition-opacity duration-300"></div>
+
     <!-- About Us -->
-    <section id="about" class="relative h-screen bg-cover bg-center about-image">
+    <section id="about" class="relative bg-cover bg-center about-image mt-16">
       <div class="absolute inset-0 bg-black opacity-50"></div>
-      <div class="absolute inset-0 container mx-auto py-12 flex items-center justify-center px-4 md:px-8">
+      <div class="relative container mx-auto py-12 flex flex-col items-center justify-center px-4 md:px-8">
         <div class="text-center space-y-4">
           <h2 class="text-3xl font-bold text-white">About Us</h2>
           <div class="flex justify-center">
-            <img src="img/tes.png" alt="About Us Image" class="w-full h-auto max-w-md rounded" />
+            <img src="img/About Us.jpg" alt="About Us Image" class="w-1/3 md:w-1/4 h-auto rounded" />
           </div>
-          <p>We are actively harnessing the potential of wind energy as a clean and inexhaustible resource. Through our efforts, we aim to make the planet a better place for our communities.</p>
+          <p class="text-white text-left max-w-prose">
+            Kami aktif memanfaatkan potensi energi angin sebagai sumber daya bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk membuat planet ini menjadi tempat yang lebih baik untuk komunitas kami.
+          </p>
         </div>
       </div>
     </section>
@@ -71,21 +75,21 @@
                 <!-- Service 1 -->
                 <div class="flex-none w-full md:w-70">
                   <div class="bg-black p-4 rounded-lg">
-                    <img src="img/tes.png" alt="Layanan 1" class="w-full h-auto rounded" />
+                    <img src="img/Service.jpg" alt="Layanan 1" class="w-full h-auto rounded" />
                     <h3 class="text-xl font-bold text-white mt-4">Layanan 1</h3>
                   </div>
                 </div>
                 <!-- Service 2 -->
                 <div class="flex-none w-full md:w-70">
                   <div class="bg-black p-4 rounded-lg">
-                    <img src="img/tes.png" alt="Layanan 2" class="w-full h-auto rounded" />
+                    <img src="img/Service.jpg" alt="Layanan 2" class="w-full h-auto rounded" />
                     <h3 class="text-xl font-bold text-white mt-4">Layanan 2</h3>
                   </div>
                 </div>
                 <!-- Service 3 -->
                 <div class="flex-none w-full md:w-0">
                   <div class="bg-black p-4 rounded-lg">
-                    <img src="img/tes.png" alt="Layanan 3" class="w-full h-auto rounded" />
+                    <img src="img/Service.jpg" alt="Layanan 3" class="w-full h-auto rounded" />
                     <h3 class="text-xl font-bold text-white mt-4">Layanan 3</h3>
                   </div>
                 </div>
@@ -129,29 +133,39 @@
       <div class="relative">
         <div class="scroll-pl-6 snap-x overflow-x-auto flex space-x-6">
           <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/tes.png" alt="News Image 1" class="w-full h-auto rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Utilizing geothermal energy</h3>
-            <p class="mt-2">Explore how geothermal energy is being harnessed for sustainable power solutions.</p>
+            <img src="img/News_1.jpg" alt="News Image 1" class="w-full h-48 object-cover rounded" />
+            <h3 class="text-xl font-bold text-white mt-4">Utilizing Geothermal Energy</h3>
+            <div class="mt-2 border border-gray-600 p-4 rounded-lg">
+              <p>Explore how geothermal energy is being harnessed for sustainable power solutions.</p>
+            </div>
           </div>
           <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/tes.png" alt="News Image 2" class="w-full h-auto rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Clean power</h3>
-            <p class="mt-2">Learn about the latest advancements in clean power technology.</p>
+            <img src="img/News_2.jpg" alt="News Image 2" class="w-full h-48 object-cover rounded" />
+            <h3 class="text-xl font-bold text-white mt-4">Clean Power</h3>
+            <div class="mt-2 border border-gray-600 p-4 rounded-lg">
+              <p>Learn about the latest advancements in clean power technology.</p>
+            </div>
           </div>
           <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/tes.png" alt="News Image 3" class="w-full h-auto rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Wind energy initiatives</h3>
-            <p class="mt-2">Discover new initiatives in the field of wind energy.</p>
+            <img src="img/News_1.jpg" alt="News Image 3" class="w-full h-48 object-cover rounded" />
+            <h3 class="text-xl font-bold text-white mt-4">Wind Energy Initiatives</h3>
+            <div class="mt-2 border border-gray-600 p-4 rounded-lg">
+              <p>Discover new initiatives in the field of wind energy.</p>
+            </div>
           </div>
           <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/tes.png" alt="News Image 4" class="w-full h-auto rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Solar power trends</h3>
-            <p class="mt-2">Stay updated on the latest trends in solar power.</p>
+            <img src="img/News_2.jpg" alt="News Image 4" class="w-full h-48 object-cover rounded" />
+            <h3 class="text-xl font-bold text-white mt-4">Solar Power Trends</h3>
+            <div class="mt-2 border border-gray-600 p-4 rounded-lg">
+              <p>Stay updated on the latest trends in solar power.</p>
+            </div>
           </div>
           <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/tes.png" alt="News Image 5" class="w-full h-auto rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Renewable energy policies</h3>
-            <p class="mt-2">Understand the impact of new policies on renewable energy.</p>
+            <img src="img/new.png" alt="News Image 5" class="w-full h-48 object-cover rounded" />
+            <h3 class="text-xl font-bold text-white mt-4">Renewable Energy Policies</h3>
+            <div class="mt-2 border border-gray-600 p-4 rounded-lg">
+              <p>Understand the impact of new policies on renewable energy.</p>
+            </div>
           </div>
         </div>
       </div>

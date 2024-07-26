@@ -6,17 +6,20 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* setiap paragraf text berwarna putih*/
 p {
   color: #ffffff;
 }
 
-#about p,
+#about p {
+  text-align: left;
+}
 #services p,
 #news p {
   color: #ffffff;
 }
 .section {
-  height: 100vh;
+  height: 50vh;
 }
 
 .container {
@@ -114,4 +117,10 @@ button svg {
   #service-carousel img {
     max-height: 500px;
   }
+}
+
+#blur-effect {
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
 }

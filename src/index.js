@@ -1,15 +1,23 @@
 function scrollToSection(sectionId) {
   document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
 }
+
 function toggleMenu() {
   const menu = document.getElementById("mobile-menu");
-  menu.classList.add("hidden");
+  menu.classList.toggle("hidden");
 }
 
 document.getElementById("menu-btn").addEventListener("click", function () {
   const menu = document.getElementById("mobile-menu");
   menu.classList.toggle("hidden");
 });
+
+document.querySelectorAll("#mobile-menu a").forEach((anchor) => {
+  anchor.addEventListener("click", function () {
+    toggleMenu(); // Hide the menu when an item is clicked
+  });
+});
+
 // service tombol
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector("#service-carousel .flex");
@@ -59,4 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth",
     });
   });
+});
+//  blur effect pada home dan about us
+document.addEventListener("scroll", function () {
+  const homeSection = document.getElementById("home");
+  const aboutSection = document.getElementById("about");
+  const blurEffect = document.getElementById("blur-effect");
+
+  const homeRect = homeSection.getBoundingClientRect();
+  const aboutRect = aboutSection.getBoundingClientRect();
+
+  if (aboutRect.top < window.innerHeight && aboutRect.bottom > 0) {
+    blurEffect.classList.add("opacity-100");
+  } else {
+    blurEffect.classList.remove("opacity-100");
+  }
 });
