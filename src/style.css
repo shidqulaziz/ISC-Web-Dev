@@ -1,20 +1,110 @@
 @import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
 
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav,
+.footer,
+.section-bg {
+  background-color: #000;
+}
+
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+.services-image {
+  background-image: url("path_to_services_image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#service-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+#service-carousel .flex {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+#service-carousel .flex > div {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+#service-carousel img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button svg {
+  vertical-align: middle;
+}
+
+/* Mobile styles */
+@media (max-width: 639px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  #service-carousel img {
+    max-height: 300px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 640px) and (max-width: 767px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #service-carousel img {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .container {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  #service-carousel img {
+    max-height: 450px;
+  }
 }
 
+/* Large desktop styles */
 @media (min-width: 1024px) {
   .container {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  #service-carousel img {
+    max-height: 500px;
   }
 }
