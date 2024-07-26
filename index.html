@@ -6,38 +6,39 @@
     <title>Energy Company</title>
     <link href="src/style.css" rel="stylesheet" />
   </head>
-  <body class="bg-black text-gray-300">
-    <!-- Navigation -->
-    <nav class="p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="text-white font-bold text-xl">Energy</div>
-        <div class="hidden md:flex space-x-4">
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('home')">Home</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('about')">About Us</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('services')">Services</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('news')">News</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('contact')">Contact Us</a>
-        </div>
-        <div class="md:hidden">
-          <button id="menu-btn" class="text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4">
-        <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('home')">Home</a>
-        <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('about')">About Us</a>
-        <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('services')">Services</a>
-        <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('news')">News</a>
-        <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('contact')">Contact Us</a>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
+  <body href="bg-black text-gray-300">
+    <!-- Hero Section with Navigation -->
     <section id="home" class="relative h-screen bg-cover bg-center hero-image">
       <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Navigation -->
+      <nav class="p-4 absolute top-0 left-0 right-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-xl">Energy</div>
+          <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('home')">Home</a>
+            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('about')">About Us</a>
+            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('services')">Services</a>
+            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('news')">News</a>
+            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('contact')">Contact Us</a>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4">
+          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('home')">Home</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('about')">About Us</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('services')">Services</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('news')">News</a>
+          <a href="#" class="text-gray-300 hover:text-white" onclick="toggleMenu(); scrollToSection('contact')">Contact Us</a>
+        </div>
+      </nav>
+
       <img src="img/VB-WEBINAR SKILHUB X HIMAIF UBSI-01.jpg" alt="Home Image" class="w-full h-auto rounded" />
     </section>
 
