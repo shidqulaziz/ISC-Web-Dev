@@ -69,17 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 //  blur effect pada home dan about us
-document.addEventListener("scroll", function () {
-  const homeSection = document.getElementById("home");
-  const aboutSection = document.getElementById("about");
-  const blurEffect = document.getElementById("blur-effect");
+// document.addEventListener("scroll", function () {
+//   const homeSection = document.getElementById("home");
+//   const aboutSection = document.getElementById("about");
+//   const blurEffect = document.getElementById("blur-effect");
 
-  const homeRect = homeSection.getBoundingClientRect();
-  const aboutRect = aboutSection.getBoundingClientRect();
+//   const homeRect = homeSection.getBoundingClientRect();
+//   const aboutRect = aboutSection.getBoundingClientRect();
 
-  if (aboutRect.top < window.innerHeight && aboutRect.bottom > 0) {
-    blurEffect.classList.add("opacity-100");
-  } else {
-    blurEffect.classList.remove("opacity-100");
-  }
-});
+//   if (aboutRect.top < window.innerHeight && aboutRect.bottom > 0) {
+//     blurEffect.classList.add("opacity-100");
+//   } else {
+//     blurEffect.classList.remove("opacity-100");
+//   }
+// });
