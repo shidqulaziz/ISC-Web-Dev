@@ -120,23 +120,55 @@
         <div class="space-y-4 text-left">
           <h2 class="text-3xl font-bold text-white mb-4">Wind energy is an inexhaustible resource</h2>
 
-          <p class="text-white max-w-prose">1. Safe, more sustainable and more reliable. Wide range of uses. Power everywhere you need it.</p>
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item">
+            <div class="flex justify-between items-center">
+              <p class="text-white max-w-prose">1. Safe, more sustainable and more reliable. Wide range of uses. Power everywhere you need it.</p>
+              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content1')">+</button>
+            </div>
+            <div id="content1" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 1.</div>
+            <hr class="border-t border-gray-600 my-4" />
+          </div>
 
-          <hr class="border-t border-gray-600 my-4" />
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item">
+            <div class="flex justify-between items-center">
+              <p class="text-white max-w-prose">2. Harness the power of wind with cutting-edge technology. Contribute to a cleaner, greener future.</p>
+              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content2')">+</button>
+            </div>
+            <div id="content2" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 2.</div>
+            <hr class="border-t border-gray-600 my-4" />
+          </div>
 
-          <p class="text-white max-w-prose">2. Harness the power of wind with cutting-edge technology. Contribute to a cleaner, greener future.</p>
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item">
+            <div class="flex justify-between items-center">
+              <p class="text-white max-w-prose">3. Reduces dependence on fossil fuels. Ideal for areas with high wind speeds.</p>
+              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content3')">+</button>
+            </div>
+            <div id="content3" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 3.</div>
+            <hr class="border-t border-gray-600 my-4" />
+          </div>
 
-          <hr class="border-t border-gray-600 my-4" />
+          <!-- Accordion Item 4 -->
+          <div class="accordion-item">
+            <div class="flex justify-between items-center">
+              <p class="text-white max-w-prose">4. Can be integrated into existing energy grids. Helps in achieving energy independence.</p>
+              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content4')">+</button>
+            </div>
+            <div id="content4" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 4.</div>
+            <hr class="border-t border-gray-600 my-4" />
+          </div>
 
-          <p class="text-white max-w-prose">3. Reduces dependence on fossil fuels. Ideal for areas with high wind speeds.</p>
-
-          <hr class="border-t border-gray-600 my-4" />
-
-          <p class="text-white max-w-prose">4. Can be integrated into existing energy grids. Helps in achieving energy independence.</p>
-
-          <hr class="border-t border-gray-600 my-4" />
-
-          <p class="text-white max-w-prose">5. Provides economic benefits through job creation and local investment. Supports sustainable development.</p>
+          <!-- Accordion Item 5 -->
+          <div class="accordion-item">
+            <div class="flex justify-between items-center">
+              <p class="text-white max-w-prose">5. Provides economic benefits through job creation and local investment. Supports sustainable development.</p>
+              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content5')">+</button>
+            </div>
+            <div id="content5" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 5.</div>
+            <hr class="border-t border-gray-600 my-4" />
+          </div>
         </div>
       </div>
     </section>

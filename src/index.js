@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// effect blur
 document.addEventListener("scroll", function () {
   const homeSection = document.getElementById("home");
   const aboutSection = document.getElementById("about");
@@ -83,3 +84,15 @@ document.addEventListener("scroll", function () {
     blurEffect.classList.remove("opacity-50");
   }
 });
+
+function toggleAccordion(contentId) {
+  const content = document.getElementById(contentId);
+  const isVisible = !content.classList.contains("hidden");
+
+  // Toggle the clicked content
+  if (isVisible) {
+    content.classList.add("hidden");
+  } else {
+    content.classList.remove("hidden");
+  }
+}

@@ -59,7 +59,7 @@ button {
   background-color: #333;
   border: none;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 0.25rem;
   transition: background-color 0.3s ease;
 }
@@ -124,3 +124,20 @@ button svg {
   background: rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease;
 }
+
+.accordion-item {
+  position: relative;
+  transition: max-height 0.33s ease, opacity 0.33s ease;
+}
+
+.accordion-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-item .hidden {
+  display: none;
+}
+
+/* Custom styles for hero section navigation */
