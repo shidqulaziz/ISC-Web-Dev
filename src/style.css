@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
 
 body {
-  background-color: #000;
+  background-color: orange;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -118,16 +118,48 @@ button svg {
     max-height: 500px;
   }
 }
+/* Styling for the hero section and navigation */
+.hero-image {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  font-weight: bold; /* Teks tebal */
+  padding: 2rem; /* Padding untuk kenyamanan */
+}
+
+#menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; /* Make sure the button is on the right */
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 4rem;
+  right: 1rem; /* Align the menu to the right */
+  background: rgba(61, 60, 60, 0.8);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 
 #blur-effect {
-  backdrop-filter: blur(5px);
-  background: rgba(0, 0, 0, 0.3);
-  transition: opacity 0.3s ease;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0);
+  transition: opacity 0.5s ease;
 }
 
 .accordion-item {
   position: relative;
-  transition: max-height 0.33s ease, opacity 0.33s ease;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .accordion-item button {
@@ -140,4 +172,4 @@ button svg {
   display: none;
 }
 
-/* Custom styles for hero section navigation */
+/* news*/
