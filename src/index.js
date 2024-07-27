@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
       updateCarousel();
     }
   });
-
   nextBtn.addEventListener("click", () => {
     if (currentIndex < itemCount - 1) {
       currentIndex++;
@@ -72,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleAccordion(contentId) {
   const content = document.getElementById(contentId);
   const isVisible = !content.classList.contains("hidden");
-
   // Toggle the clicked content
   if (isVisible) {
     content.classList.add("hidden");
@@ -80,3 +78,10 @@ function toggleAccordion(contentId) {
     content.classList.remove("hidden");
   }
 }
+
+const image = document.querySelector(".blur-effect");
+function updateBlurEffect() {
+  const scrollThreshold = 300;
+  image.classList.toggle("blur", window.scrollY > scrollThreshold);
+}
+document.addEventListener("scroll", updateBlurEffect);

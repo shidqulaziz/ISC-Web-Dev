@@ -7,16 +7,16 @@
     <link href="src/style.css" rel="stylesheet" />
   </head>
   <body href="bg-black text-gray-300">
-    <!-- Hero Section -->
-
+    <!-- Home Section -->
     <section id="home" class="relative h-screen bg-cover bg-center hero-image">
-      <div class="absolute inset-0 bg-black opacity-5"></div>
-      <img src="img/Home.jpg" alt="Home Image" class="w-full h-full object-cover rounded" />
-
+      <img src="img/Home.jpg" alt="Home Image" class="w-full h-full object-cover rounded move-animation blur-effect" />
       <!-- Navigation and other content -->
       <nav class="p-4 absolute top-0 left-0 right-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
-          <div class="text-white font-bold text-xl">Energy</div>
+          <div class="flex items-center space-x-2">
+            <img src="img/pnf.jpg" alt="Logo" class="h-8 w-8" />
+            <div class="text-white font-bold text-xl">Energy</div>
+          </div>
           <div class="hidden md:flex space-x-20 font-bold">
             <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('home')">Home</a>
             <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('about')">About Us</a>
@@ -46,15 +46,16 @@
     <div id="blur-effect" class="fixed inset-0 bg-black opacity-0 transition-opacity duration-300"></div>
 
     <!-- About Us -->
-    <section id="about" class="relative bg-cover bg-center about-image mt-10">
+    <section id="about" class="relative bg-cover bg-center about-image mt-0 bg-yellow mb-5">
       <div class="relative container mx-auto py-12 px-1 md:px-8">
         <div class="space-y-4 text-left">
-          <h2 class="text-2xl font-bold text-white">About Us</h2>
+          <h2 class="text-3xl font-bold text-white">About Us</h2>
           <div class="flex justify-center">
             <img src="img/About Us.jpg" alt="About Us Image" class="w-60 h-60 object-cover rounded" />
           </div>
           <p class="text-black max-w-prose">
-            Kami aktif memanfaatkan potensi energi angin sebagai sumber daya bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk membuat planet ini menjadi tempat yang lebih baik untuk komunitas kami.
+            Kami aktif memanfaatkan potensi energi angin sebagai sumber daya bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk membuat planet ini menjadi tempat yang lebih baik untuk komunitas kami
+            danananananananaanannnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
           </p>
         </div>
       </div>
@@ -63,11 +64,33 @@
     <!-- Services -->
     <section id="services" class="relative h-screen bg-cover bg-center services-image">
       <div class="absolute inset-0 bg-black opacity-0"></div>
-      <div class="absolute inset-0 container mx-auto py-12 flex items-center justify-center px-4 md:px-8">
+      <div class="absolute inset-0 container mx-auto py-12 flex items-center justify-center px-4 md:px-8 mb-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="space-y-4">
             <h2 class="text-3xl font-bold text-white">Services</h2>
             <p>Kami menyediakan layanan yang memanfaatkan energi angin untuk menghasilkan energi bersih bagi rumah dan bisnis.</p>
+            <div class="space-y-5">
+              <div class="flex items-start">
+                <span class="text-l text-black mr-1">1.</span>
+                <p class="text-white">Layanan pertama: Pembangkit listrik tenaga angin untuk rumah tangga.</p>
+              </div>
+              <div class="flex items-start">
+                <span class="text-l text-black mr-1">2.</span>
+                <p class="text-white">Layanan kedua: Sistem energi angin skala kecil untuk bisnis lokal.</p>
+              </div>
+              <div class="flex items-start">
+                <span class="text-l text-black mr-1">3.</span>
+                <p class="text-white">Layanan ketiga: Konsultasi dan perencanaan proyek energi angin.</p>
+              </div>
+              <div class="flex items-start">
+                <span class="text-l text-black mr-1">4.</span>
+                <p class="text-white">Layanan keempat: Pemeliharaan dan perbaikan turbin angin.</p>
+              </div>
+              <div class="flex items-start">
+                <span class="text-l text-black mr-1">5.</span>
+                <p class="text-white">Layanan kelima: Penyediaan suku cadang dan komponen turbin angin.</p>
+              </div>
+            </div>
           </div>
           <div class="relative flex flex-col items-center">
             <div id="service-carousel" class="overflow-hidden relative">
