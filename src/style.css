@@ -79,11 +79,9 @@ button svg {
   }
 
   #service-carousel img {
-    max-height: 300px;
-    margin-bottom: 0rem;
+    max-height: 250px;
   }
 }
-
 /* Tablet styles */
 @media (min-width: 640px) and (max-width: 767px) {
   .container {
@@ -136,7 +134,7 @@ button svg {
 
 /* Custom styles for hero section navigation */
 .hero-image {
-  position: relative;
+  position: static;
 }
 
 nav {
