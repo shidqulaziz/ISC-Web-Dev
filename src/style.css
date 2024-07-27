@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
 
 body {
-  background-color: yellow;
+  background-color: #ffba30;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -14,7 +14,6 @@ p {
 #about p {
   text-align: left;
 }
-
 #services p,
 #news p {
   color: #000;
@@ -74,19 +73,20 @@ button svg {
 /* Mobile styles */
 @media (max-width: 639px) {
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem; /* Mengurangi padding kiri */
+    padding-right: 0.5rem; /* Mengurangi padding kanan */
   }
 
   #service-carousel img {
-    max-height: 250px;
+    max-height: 300px;
   }
 }
+
 /* Tablet styles */
 @media (min-width: 640px) and (max-width: 767px) {
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   #service-carousel img {
@@ -133,10 +133,6 @@ button svg {
 }
 
 /* Custom styles for hero section navigation */
-.hero-image {
-  position: static;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -166,7 +162,7 @@ nav {
 /* style.css */
 
 footer {
-  background-color: green; /* Hijau daun untuk footer */
+  background-color: #14e174; /* Hijau daun untuk footer */
 }
 
 footer h3 {
@@ -183,14 +179,4 @@ footer a:hover {
 
 footer p {
   color: #e0e0e0; /* Warna teks hak cipta */
-}
-
-.blur-effect {
-  filter: blur(0);
-  transition: filter 1s ease;
-}
-
-/* Efek blur ketika scroll */
-.blur-effect.blur {
-  filter: blur(2px); /* Sesuaikan tingkat blur sesuai kebutuhan */
 }
