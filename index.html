@@ -17,7 +17,7 @@
       <nav class="p-4 absolute top-0 left-0 right-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
           <div class="text-white font-bold text-xl">Energy</div>
-          <div class="hidden md:flex space-x-4">
+          <div class="hidden md:flex space-x-20 font-bold">
             <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('home')">Home</a>
             <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('about')">About Us</a>
             <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('services')">Services</a>
@@ -47,14 +47,13 @@
 
     <!-- About Us -->
     <section id="about" class="relative bg-cover bg-center about-image mt-10">
-      <div class="absolute inset-0 bg-black opacity-0"></div>
-      <div class="relative container mx-auto py-12 flex flex-col items-center justify-center px-4 md:px-8">
-        <div class="text-center space-y-4">
-          <h2 class="text-3xl font-bold text-white">About Us</h2>
+      <div class="relative container mx-auto py-12 px-1 md:px-8">
+        <div class="space-y-4 text-left">
+          <h2 class="text-2xl font-bold text-white">About Us</h2>
           <div class="flex justify-center">
-            <img src="img/About Us.jpg" alt="About Us Image" class="w-48 h-48 object-cover rounded" />
+            <img src="img/About Us.jpg" alt="About Us Image" class="w-60 h-60 object-cover rounded" />
           </div>
-          <p class="text-black text-left max-w-prose">
+          <p class="text-black max-w-prose">
             Kami aktif memanfaatkan potensi energi angin sebagai sumber daya bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk membuat planet ini menjadi tempat yang lebih baik untuk komunitas kami.
           </p>
         </div>
@@ -74,24 +73,24 @@
             <div id="service-carousel" class="overflow-hidden relative">
               <div class="flex transition-transform duration-300">
                 <!-- Service 1 -->
-                <div class="flex-none w-full md:w-70">
-                  <div class="bg-black p-4 rounded-lg">
+                <div class="flex-none w-14 md:w-70">
+                  <div class="bg-white p-4 rounded-lg">
                     <img src="img/Service.jpg" alt="Layanan 1" class="w-full h-auto rounded" />
-                    <h3 class="text-xl font-bold text-white mt-4">Layanan 1</h3>
+                    <h3 class="text-xl font-bold text-black mt-4">Layanan 1</h3>
                   </div>
                 </div>
                 <!-- Service 2 -->
                 <div class="flex-none w-full md:w-70">
-                  <div class="bg-black p-4 rounded-lg">
+                  <div class="bg-white p-4 rounded-lg">
                     <img src="img/Service.jpg" alt="Layanan 2" class="w-full h-auto rounded" />
-                    <h3 class="text-xl font-bold text-white mt-4">Layanan 2</h3>
+                    <h3 class="text-xl font-bold text-black mt-4">Layanan 2</h3>
                   </div>
                 </div>
                 <!-- Service 3 -->
                 <div class="flex-none w-full md:w-0">
-                  <div class="bg-black p-4 rounded-lg">
+                  <div class="bg-white p-4 rounded-lg">
                     <img src="img/Service.jpg" alt="Layanan 3" class="w-full h-auto rounded" />
-                    <h3 class="text-xl font-bold text-white mt-4">Layanan 3</h3>
+                    <h3 class="text-xl font-bold text-black mt-4">Layanan 3</h3>
                   </div>
                 </div>
                 <!-- Tambahkan layanan 4 dan 5 jika perlu -->
@@ -116,7 +115,7 @@
     </section>
 
     <!-- Wind Energy -->
-    <section class="bg-black py-12">
+    <section class="bg-gray-700 py-12">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="space-y-4 text-left">
           <h2 class="text-3xl font-bold text-white mb-4">Wind energy is an inexhaustible resource</h2>
@@ -171,14 +170,18 @@
             <hr class="border-t border-gray-600 my-4" />
           </div>
         </div>
+
+        <div class="flex justify-center">
+          <img src="img/Service.jpg" alt="Wind Energy Image" class="object-cover rounded w-78 h-96" />
+        </div>
       </div>
     </section>
 
     <!-- News -->
     <section id="news" class="container mx-auto py-12">
-      <h2 class="text-3xl font-bold text-black mb-6">News</h2>
+      <h2 class="text-3xl font-bold text-black mb-5">News</h2>
       <div class="relative">
-        <div class="scroll-pl-6 snap-x overflow-x-auto flex space-x-6">
+        <div class="scroll-pl-6 snap-x overflow-x-auto flex space-x-8">
           <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
             <img src="img/News_1.jpg" alt="News Image 1" class="w-full h-48 object-cover rounded" />
             <h3 class="text-xl font-bold text-black mt-4">Utilizing Geothermal Energy</h3>
