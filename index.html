@@ -8,8 +8,9 @@
   </head>
   <body href="bg-black text-gray-300">
     <!-- Hero Section -->
+
     <section id="home" class="relative h-screen bg-cover bg-center hero-image">
-      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="absolute inset-0 bg-black opacity-5"></div>
       <img src="img/Home.jpg" alt="Home Image" class="w-full h-full object-cover rounded" />
 
       <!-- Navigation and other content -->
@@ -17,11 +18,11 @@
         <div class="container mx-auto flex justify-between items-center">
           <div class="text-white font-bold text-xl">Energy</div>
           <div class="hidden md:flex space-x-4">
-            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('home')">Home</a>
-            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('about')">About Us</a>
-            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('services')">Services</a>
-            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('news')">News</a>
-            <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('contact')">Contact Us</a>
+            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('home')">Home</a>
+            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('about')">About Us</a>
+            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('services')">Services</a>
+            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('news')">News</a>
+            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('contact')">Contact Us</a>
           </div>
           <div class="md:hidden">
             <button id="menu-btn" class="text-white focus:outline-none">
@@ -45,15 +46,15 @@
     <div id="blur-effect" class="fixed inset-0 bg-black opacity-0 transition-opacity duration-300"></div>
 
     <!-- About Us -->
-    <section id="about" class="relative bg-cover bg-center about-image mt-16">
-      <div class="absolute inset-0 bg-black opacity-50"></div>
+    <section id="about" class="relative bg-cover bg-center about-image mt-10">
+      <div class="absolute inset-0 bg-black opacity-0"></div>
       <div class="relative container mx-auto py-12 flex flex-col items-center justify-center px-4 md:px-8">
         <div class="text-center space-y-4">
           <h2 class="text-3xl font-bold text-white">About Us</h2>
           <div class="flex justify-center">
             <img src="img/About Us.jpg" alt="About Us Image" class="w-48 h-48 object-cover rounded" />
           </div>
-          <p class="text-white text-left max-w-prose">
+          <p class="text-black text-left max-w-prose">
             Kami aktif memanfaatkan potensi energi angin sebagai sumber daya bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk membuat planet ini menjadi tempat yang lebih baik untuk komunitas kami.
           </p>
         </div>
@@ -62,7 +63,7 @@
 
     <!-- Services -->
     <section id="services" class="relative h-screen bg-cover bg-center services-image">
-      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="absolute inset-0 bg-black opacity-0"></div>
       <div class="absolute inset-0 container mx-auto py-12 flex items-center justify-center px-4 md:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="space-y-4">
@@ -175,42 +176,42 @@
 
     <!-- News -->
     <section id="news" class="container mx-auto py-12">
-      <h2 class="text-3xl font-bold text-white mb-6">News</h2>
+      <h2 class="text-3xl font-bold text-black mb-6">News</h2>
       <div class="relative">
         <div class="scroll-pl-6 snap-x overflow-x-auto flex space-x-6">
-          <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
+          <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
             <img src="img/News_1.jpg" alt="News Image 1" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Utilizing Geothermal Energy</h3>
+            <h3 class="text-xl font-bold text-black mt-4">Utilizing Geothermal Energy</h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p>Explore how geothermal energy is being harnessed for sustainable power solutions.</p>
+              <p class="text-black">Explore how geothermal energy is being harnessed for sustainable power solutions.</p>
             </div>
           </div>
-          <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
+          <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
             <img src="img/News_2.jpg" alt="News Image 2" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Clean Power</h3>
+            <h3 class="text-xl font-bold text-black mt-4">Clean Power</h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p>Learn about the latest advancements in clean power technology.</p>
+              <p class="text-black">Learn about the latest advancements in clean power technology.</p>
             </div>
           </div>
-          <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
+          <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
             <img src="img/News_1.jpg" alt="News Image 3" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Wind Energy Initiatives</h3>
+            <h3 class="text-xl font-bold text-black mt-4">Wind Energy Initiatives</h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p>Discover new initiatives in the field of wind energy.</p>
+              <p class="text-black">Discover new initiatives in the field of wind energy.</p>
             </div>
           </div>
-          <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
+          <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
             <img src="img/News_2.jpg" alt="News Image 4" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Solar Power Trends</h3>
+            <h3 class="text-xl font-bold text-black mt-4">Solar Power Trends</h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p>Stay updated on the latest trends in solar power.</p>
+              <p class="text-black">Stay updated on the latest trends in solar power.</p>
             </div>
           </div>
-          <div class="snap-start bg-black p-4 rounded-lg w-96 flex-shrink-0">
+          <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
             <img src="img/new.png" alt="News Image 5" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-white mt-4">Renewable Energy Policies</h3>
+            <h3 class="text-xl font-bold text-black mt-4">Renewable Energy Policies</h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p>Understand the impact of new policies on renewable energy.</p>
+              <p class="text-black">Understand the impact of new policies on renewable energy.</p>
             </div>
           </div>
         </div>
@@ -218,39 +219,39 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-black py-8">
+    <footer id="contact" class="bg-leaf-green py-8">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Ready to cooperate with us?</h3>
-          <a href="#" class="text-gray-300 hover:text-white">Contact us now</a>
+          <a href="#" class="text-white hover:text-gray-300">Contact us now</a>
         </div>
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Company</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">Services</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">News</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">About Us</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Services</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">News</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Support</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-white">FAQ</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">Help Center</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">FAQ</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Help Center</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Privacy Policy</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Follow Us</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-white">Twitter</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">Facebook</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">Instagram</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Twitter</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Facebook</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Instagram</a></li>
           </ul>
         </div>
       </div>
       <div class="text-center mt-8">
-        <p class="text-gray-400">&copy; 2024 Energy Company. All rights reserved.</p>
+        <p class="text-white">&copy; 2024 Energy Company. All rights reserved.</p>
       </div>
     </footer>
 

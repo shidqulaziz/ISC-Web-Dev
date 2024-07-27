@@ -69,22 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// effect blur
-document.addEventListener("scroll", function () {
-  const homeSection = document.getElementById("home");
-  const aboutSection = document.getElementById("about");
-  const blurEffect = document.getElementById("blur-effect");
-
-  const homeRect = homeSection.getBoundingClientRect();
-  const aboutRect = aboutSection.getBoundingClientRect();
-
-  if (aboutRect.top < window.innerHeight && aboutRect.bottom > 0) {
-    blurEffect.classList.add("opacity-50");
-  } else {
-    blurEffect.classList.remove("opacity-50");
-  }
-});
-
 function toggleAccordion(contentId) {
   const content = document.getElementById(contentId);
   const isVisible = !content.classList.contains("hidden");
