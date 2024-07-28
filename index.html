@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energy Company</title>
     <link href="src/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
   <body href="bg-black text-gray-300">
     <!-- Home Section -->
@@ -14,8 +15,8 @@
       <nav class="p-4 absolute top-0 left-0 right-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
           <div class="flex items-center space-x-2">
-            <img src="img/pnf.jpg" alt="Logo" class="h-8 w-8" />
-            <div class="text-white font-bold text-xl">Energy</div>
+            <img src="img/logo.png" alt="Logo" class="h-8 w-8" />
+            <div class="animate-typing overflow-hidden whitespace-nowrap text-white font-bold text-xl border-r-4 border-r-white">Energi</div>
           </div>
           <div class="hidden md:flex space-x-20 font-bold">
             <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('home')">Home</a>
@@ -55,7 +56,6 @@
           </div>
           <p class="text-black max-w-prose">
             Kami aktif memanfaatkan potensi energi angin sebagai sumber daya bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk membuat planet ini menjadi tempat yang lebih baik untuk komunitas kami
-            danananananananaanannnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
           </p>
         </div>
       </div>
@@ -244,8 +244,65 @@
       </div>
     </section>
 
+    <!-- testimoni -->
+    <section id="testimonials" aria-label="What our customers are saying" class="bg-slate-50 py-20 sm:py-32">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl md:text-center">
+          <h2 class="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">What Our Customers Are Saying</h2>
+        </div>
+        <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+          <!-- Baris 1 -->
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">I love the fitness apparel and gear I purchased from this site. The quality is exceptional and the prices are unbeatable.</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Sheryl Berge</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color: transparent" src="https://randomuser.me/api/portraits/men/15.jpg" />
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">The service was fantastic, and the delivery was quick. Highly recommend!</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Giovanni Andika</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color: transparent" src="https://randomuser.me/api/portraits/men/25.jpg" />
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">Great customer support and fantastic product range. I found everything I needed!</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Shidqul Aziz</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color: transparent" src="https://randomuser.me/api/portraits/men/35.jpg" />
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer id="contact" class="bg-leaf-green py-8">
+    <footer id="contact" style="background-color: black" class="py-8">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Ready to cooperate with us?</h3>
@@ -254,25 +311,43 @@
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Company</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-white hover:text-gray-300">About Us</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Services</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">News</a></li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">News</a>
+            </li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Support</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-white hover:text-gray-300">FAQ</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Help Center</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Privacy Policy</a></li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">FAQ</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">Help Center</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">Privacy Policy</a>
+            </li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Follow Us</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-white hover:text-gray-300">Twitter</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Facebook</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Instagram</a></li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300"> <i class="fab fa-twitter"></i> Twitter </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300"> <i class="fab fa-facebook-f"></i> Facebook </a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300"> <i class="fab fa-instagram"></i> Instagram </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -280,7 +355,6 @@
         <p class="text-white">&copy; 2024 Energy Company. All rights reserved.</p>
       </div>
     </footer>
-
     <script src="src/index.js"></script>
   </body>
 </html>

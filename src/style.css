@@ -1,5 +1,35 @@
 @import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
 
+/* menambahkan animasi pada text energy*/
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.animate-typing {
+  animation: typing 4s steps(20, end) infinite, blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  font-family: monospace;
+}
 body {
   background-color: #ffba30;
   margin: 0;
@@ -161,11 +191,11 @@ nav {
 
 /* style.css */
 
-footer {
+/* footer {
   background-color: #14e174; /* Hijau daun untuk footer */
-}
+/* } */
 
-footer h3 {
+/* footer h3 {
   color: #ffffff;
 }
 
@@ -175,8 +205,16 @@ footer a {
 
 footer a:hover {
   color: #ffffff; /* Warna link saat hover */
+/* } */
+
+/* footer p {
+  color: #e0e0e0; /* Warna teks hak cipta */
+/* }  */
+
+.text-custom {
+  color: white;
 }
 
-footer p {
-  color: #e0e0e0; /* Warna teks hak cipta */
+.text-custom:hover {
+  color: gray; /* Atau warna lain sesuai keinginan Anda */
 }
