@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energy Company</title>
     <link href="src/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body href="bg-black text-gray-300">
     <!-- Home Section -->
     <section id="home" class="relative h-screen bg-cover bg-center hero-image">
-      <img src="img/Home.jpg" alt="Home Image" class="w-full h-full object-cover rounded move-animation blur-effect" />
+      <img
+        src="img/Home.jpg"
+        alt="Home Image"
+        class="w-full h-full object-cover rounded move-animation blur-effect"
+      />
       <!-- Navigation and other content -->
       <nav class="p-4 absolute top-0 left-0 right-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
@@ -18,77 +26,175 @@
             <div class="text-white font-bold text-xl">Energy</div>
           </div>
           <div class="hidden md:flex space-x-20 font-bold">
-            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('home')">Home</a>
-            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('about')">About Us</a>
-            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('services')">Services</a>
-            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('news')">News</a>
-            <a href="#" class="text-black-400 hover:text-white" onclick="scrollToSection('contact')">Contact Us</a>
+            <a
+              href="#"
+              class="text-black-400 hover:text-white"
+              onclick="scrollToSection('home')"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-black-400 hover:text-white"
+              onclick="scrollToSection('about')"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-black-400 hover:text-white"
+              onclick="scrollToSection('services')"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-black-400 hover:text-white"
+              onclick="scrollToSection('news')"
+              >News</a
+            >
+            <a
+              href="#"
+              class="text-black-400 hover:text-white"
+              onclick="scrollToSection('contact')"
+              >Contact Us</a
+            >
           </div>
           <div class="md:hidden">
             <button id="menu-btn" class="text-white focus:outline-none">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
               </svg>
             </button>
           </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4">
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('home')">Home</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('about')">About Us</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('services')">Services</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('news')">News</a>
-          <a href="#" class="text-gray-300 hover:text-white" onclick="scrollToSection('contact')">Contact Us</a>
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden flex flex-col space-y-4 mt-4"
+        >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white"
+            onclick="scrollToSection('home')"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white"
+            onclick="scrollToSection('about')"
+            >About Us</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white"
+            onclick="scrollToSection('services')"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white"
+            onclick="scrollToSection('news')"
+            >News</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white"
+            onclick="scrollToSection('contact')"
+            >Contact Us</a
+          >
         </div>
       </nav>
     </section>
 
     <!-- Blur Effect Container -->
-    <div id="blur-effect" class="fixed inset-0 bg-black opacity-0 transition-opacity duration-300"></div>
+    <div
+      id="blur-effect"
+      class="fixed inset-0 bg-black opacity-0 transition-opacity duration-300"
+    ></div>
 
     <!-- About Us -->
-    <section id="about" class="relative bg-cover bg-center about-image mt-0 bg-yellow mb-5">
+    <section
+      id="about"
+      class="relative bg-cover bg-center about-image mt-0 bg-yellow mb-5"
+    >
       <div class="relative container mx-auto py-12 px-1 md:px-8">
         <div class="space-y-4 text-left">
           <h2 class="text-3xl font-bold text-white">About Us</h2>
           <div class="flex justify-center">
-            <img src="img/About Us.jpg" alt="About Us Image" class="w-60 h-60 object-cover rounded" />
+            <img
+              src="img/About Us.jpg"
+              alt="About Us Image"
+              class="w-60 h-60 object-cover rounded"
+            />
           </div>
           <p class="text-black max-w-prose">
-            Kami aktif memanfaatkan potensi energi angin sebagai sumber daya bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk membuat planet ini menjadi tempat yang lebih baik untuk komunitas kami
-            danananananananaanannnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
+            Kami aktif memanfaatkan potensi energi angin sebagai sumber daya
+            bersih dan tidak habis. Melalui upaya kami, kami bertujuan untuk
+            membuat planet ini menjadi tempat yang lebih baik untuk komunitas
+            kami danananananananaanannnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="relative h-screen bg-cover bg-center services-image">
+    <section
+      id="services"
+      class="relative h-screen bg-cover bg-center services-image"
+    >
       <div class="absolute inset-0 bg-black opacity-0"></div>
-      <div class="absolute inset-0 container mx-auto py-12 flex items-center justify-center px-4 md:px-8 mb-8">
+      <div
+        class="absolute inset-0 container mx-auto py-12 flex items-center justify-center px-4 md:px-8 mb-8"
+      >
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="space-y-4">
             <h2 class="text-3xl font-bold text-white">Services</h2>
-            <p>Kami menyediakan layanan yang memanfaatkan energi angin untuk menghasilkan energi bersih bagi rumah dan bisnis.</p>
+            <p>
+              Kami menyediakan layanan yang memanfaatkan energi angin untuk
+              menghasilkan energi bersih bagi rumah dan bisnis.
+            </p>
             <div class="space-y-5">
               <div class="flex items-start">
                 <span class="text-l text-black mr-1">1.</span>
-                <p class="text-white">Layanan pertama: Pembangkit listrik tenaga angin untuk rumah tangga.</p>
+                <p class="text-white">
+                  Layanan pertama: Pembangkit listrik tenaga angin untuk rumah
+                  tangga.
+                </p>
               </div>
               <div class="flex items-start">
                 <span class="text-l text-black mr-1">2.</span>
-                <p class="text-white">Layanan kedua: Sistem energi angin skala kecil untuk bisnis lokal.</p>
+                <p class="text-white">
+                  Layanan kedua: Sistem energi angin skala kecil untuk bisnis
+                  lokal.
+                </p>
               </div>
               <div class="flex items-start">
                 <span class="text-l text-black mr-1">3.</span>
-                <p class="text-white">Layanan ketiga: Konsultasi dan perencanaan proyek energi angin.</p>
+                <p class="text-white">
+                  Layanan ketiga: Konsultasi dan perencanaan proyek energi
+                  angin.
+                </p>
               </div>
               <div class="flex items-start">
                 <span class="text-l text-black mr-1">4.</span>
-                <p class="text-white">Layanan keempat: Pemeliharaan dan perbaikan turbin angin.</p>
+                <p class="text-white">
+                  Layanan keempat: Pemeliharaan dan perbaikan turbin angin.
+                </p>
               </div>
               <div class="flex items-start">
                 <span class="text-l text-black mr-1">5.</span>
-                <p class="text-white">Layanan kelima: Penyediaan suku cadang dan komponen turbin angin.</p>
+                <p class="text-white">
+                  Layanan kelima: Penyediaan suku cadang dan komponen turbin
+                  angin.
+                </p>
               </div>
             </div>
           </div>
@@ -98,21 +204,33 @@
                 <!-- Service 1 -->
                 <div class="flex-none w-14 md:w-70">
                   <div class="bg-white p-4 rounded-lg">
-                    <img src="img/Service.jpg" alt="Layanan 1" class="w-full h-auto rounded" />
+                    <img
+                      src="img/Service.jpg"
+                      alt="Layanan 1"
+                      class="w-full h-auto rounded"
+                    />
                     <h3 class="text-xl font-bold text-black mt-4">Layanan 1</h3>
                   </div>
                 </div>
                 <!-- Service 2 -->
                 <div class="flex-none w-full md:w-70">
                   <div class="bg-white p-4 rounded-lg">
-                    <img src="img/Service.jpg" alt="Layanan 2" class="w-full h-auto rounded" />
+                    <img
+                      src="img/Service.jpg"
+                      alt="Layanan 2"
+                      class="w-full h-auto rounded"
+                    />
                     <h3 class="text-xl font-bold text-black mt-4">Layanan 2</h3>
                   </div>
                 </div>
                 <!-- Service 3 -->
                 <div class="flex-none w-full md:w-0">
                   <div class="bg-white p-4 rounded-lg">
-                    <img src="img/Service.jpg" alt="Layanan 3" class="w-full h-auto rounded" />
+                    <img
+                      src="img/Service.jpg"
+                      alt="Layanan 3"
+                      class="w-full h-auto rounded"
+                    />
                     <h3 class="text-xl font-bold text-black mt-4">Layanan 3</h3>
                   </div>
                 </div>
@@ -120,15 +238,45 @@
               </div>
             </div>
             <!-- Carousel control buttons -->
-            <div class="absolute inset-x-0 bottom-4 flex justify-center space-x-4">
-              <button id="prev-service" class="bg-gray-700 text-white p-2 rounded-full">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            <div
+              class="absolute inset-x-0 bottom-4 flex justify-center space-x-4"
+            >
+              <button
+                id="prev-service"
+                class="bg-gray-700 text-white p-2 rounded-full"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
                 </svg>
               </button>
-              <button id="next-service" class="bg-gray-700 text-white p-2 rounded-full">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              <button
+                id="next-service"
+                class="bg-gray-700 text-white p-2 rounded-full"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
                 </svg>
               </button>
             </div>
@@ -141,61 +289,117 @@
     <section class="bg-gray-700 py-12">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="space-y-4 text-left">
-          <h2 class="text-3xl font-bold text-white mb-4">Wind energy is an inexhaustible resource</h2>
+          <h2 class="text-3xl font-bold text-white mb-4">
+            Wind energy is an inexhaustible resource
+          </h2>
 
           <!-- Accordion Item 1 -->
           <div class="accordion-item">
             <div class="flex justify-between items-center">
-              <p class="text-white max-w-prose">1. Safe, more sustainable and more reliable. Wide range of uses. Power everywhere you need it.</p>
-              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content1')">+</button>
+              <p class="text-white max-w-prose">
+                1. Safe, more sustainable and more reliable. Wide range of uses.
+                Power everywhere you need it.
+              </p>
+              <button
+                class="text-white text-lg font-bold"
+                onclick="toggleAccordion('content1')"
+              >
+                +
+              </button>
             </div>
-            <div id="content1" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 1.</div>
+            <div id="content1" class="hidden mt-2 text-white max-w-prose">
+              Additional explanation for point 1.
+            </div>
             <hr class="border-t border-gray-600 my-4" />
           </div>
 
           <!-- Accordion Item 2 -->
           <div class="accordion-item">
             <div class="flex justify-between items-center">
-              <p class="text-white max-w-prose">2. Harness the power of wind with cutting-edge technology. Contribute to a cleaner, greener future.</p>
-              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content2')">+</button>
+              <p class="text-white max-w-prose">
+                2. Harness the power of wind with cutting-edge technology.
+                Contribute to a cleaner, greener future.
+              </p>
+              <button
+                class="text-white text-lg font-bold"
+                onclick="toggleAccordion('content2')"
+              >
+                +
+              </button>
             </div>
-            <div id="content2" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 2.</div>
+            <div id="content2" class="hidden mt-2 text-white max-w-prose">
+              Additional explanation for point 2.
+            </div>
             <hr class="border-t border-gray-600 my-4" />
           </div>
 
           <!-- Accordion Item 3 -->
           <div class="accordion-item">
             <div class="flex justify-between items-center">
-              <p class="text-white max-w-prose">3. Reduces dependence on fossil fuels. Ideal for areas with high wind speeds.</p>
-              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content3')">+</button>
+              <p class="text-white max-w-prose">
+                3. Reduces dependence on fossil fuels. Ideal for areas with high
+                wind speeds.
+              </p>
+              <button
+                class="text-white text-lg font-bold"
+                onclick="toggleAccordion('content3')"
+              >
+                +
+              </button>
             </div>
-            <div id="content3" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 3.</div>
+            <div id="content3" class="hidden mt-2 text-white max-w-prose">
+              Additional explanation for point 3.
+            </div>
             <hr class="border-t border-gray-600 my-4" />
           </div>
 
           <!-- Accordion Item 4 -->
           <div class="accordion-item">
             <div class="flex justify-between items-center">
-              <p class="text-white max-w-prose">4. Can be integrated into existing energy grids. Helps in achieving energy independence.</p>
-              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content4')">+</button>
+              <p class="text-white max-w-prose">
+                4. Can be integrated into existing energy grids. Helps in
+                achieving energy independence.
+              </p>
+              <button
+                class="text-white text-lg font-bold"
+                onclick="toggleAccordion('content4')"
+              >
+                +
+              </button>
             </div>
-            <div id="content4" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 4.</div>
+            <div id="content4" class="hidden mt-2 text-white max-w-prose">
+              Additional explanation for point 4.
+            </div>
             <hr class="border-t border-gray-600 my-4" />
           </div>
 
           <!-- Accordion Item 5 -->
           <div class="accordion-item">
             <div class="flex justify-between items-center">
-              <p class="text-white max-w-prose">5. Provides economic benefits through job creation and local investment. Supports sustainable development.</p>
-              <button class="text-white text-lg font-bold" onclick="toggleAccordion('content5')">+</button>
+              <p class="text-white max-w-prose">
+                5. Provides economic benefits through job creation and local
+                investment. Supports sustainable development.
+              </p>
+              <button
+                class="text-white text-lg font-bold"
+                onclick="toggleAccordion('content5')"
+              >
+                +
+              </button>
             </div>
-            <div id="content5" class="hidden mt-2 text-white max-w-prose">Additional explanation for point 5.</div>
+            <div id="content5" class="hidden mt-2 text-white max-w-prose">
+              Additional explanation for point 5.
+            </div>
             <hr class="border-t border-gray-600 my-4" />
           </div>
         </div>
 
         <div class="flex justify-center">
-          <img src="img/Service.jpg" alt="Wind Energy Image" class="object-cover rounded w-78 h-96" />
+          <img
+            src="img/Service.jpg"
+            alt="Wind Energy Image"
+            class="object-cover rounded w-78 h-96"
+          />
         </div>
       </div>
     </section>
@@ -206,38 +410,77 @@
       <div class="relative">
         <div class="scroll-pl-6 snap-x overflow-x-auto flex space-x-8">
           <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/News_1.jpg" alt="News Image 1" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-black mt-4">Utilizing Geothermal Energy</h3>
+            <img
+              src="img/News_1.jpg"
+              alt="News Image 1"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-bold text-black mt-4">
+              Utilizing Geothermal Energy
+            </h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p class="text-black">Explore how geothermal energy is being harnessed for sustainable power solutions.</p>
+              <p class="text-black">
+                Explore how geothermal energy is being harnessed for sustainable
+                power solutions.
+              </p>
             </div>
           </div>
           <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/News_2.jpg" alt="News Image 2" class="w-full h-48 object-cover rounded" />
+            <img
+              src="img/News_2.jpg"
+              alt="News Image 2"
+              class="w-full h-48 object-cover rounded"
+            />
             <h3 class="text-xl font-bold text-black mt-4">Clean Power</h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p class="text-black">Learn about the latest advancements in clean power technology.</p>
+              <p class="text-black">
+                Learn about the latest advancements in clean power technology.
+              </p>
             </div>
           </div>
           <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/News_1.jpg" alt="News Image 3" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-black mt-4">Wind Energy Initiatives</h3>
+            <img
+              src="img/News_1.jpg"
+              alt="News Image 3"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-bold text-black mt-4">
+              Wind Energy Initiatives
+            </h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p class="text-black">Discover new initiatives in the field of wind energy.</p>
+              <p class="text-black">
+                Discover new initiatives in the field of wind energy.
+              </p>
             </div>
           </div>
           <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/News_2.jpg" alt="News Image 4" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-black mt-4">Solar Power Trends</h3>
+            <img
+              src="img/News_2.jpg"
+              alt="News Image 4"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-bold text-black mt-4">
+              Solar Power Trends
+            </h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p class="text-black">Stay updated on the latest trends in solar power.</p>
+              <p class="text-black">
+                Stay updated on the latest trends in solar power.
+              </p>
             </div>
           </div>
           <div class="snap-start bg-white p-4 rounded-lg w-96 flex-shrink-0">
-            <img src="img/new.png" alt="News Image 5" class="w-full h-48 object-cover rounded" />
-            <h3 class="text-xl font-bold text-black mt-4">Renewable Energy Policies</h3>
+            <img
+              src="img/new.png"
+              alt="News Image 5"
+              class="w-full h-48 object-cover rounded"
+            />
+            <h3 class="text-xl font-bold text-black mt-4">
+              Renewable Energy Policies
+            </h3>
             <div class="mt-2 border border-gray-600 p-4 rounded-lg">
-              <p class="text-black">Understand the impact of new policies on renewable energy.</p>
+              <p class="text-black">
+                Understand the impact of new policies on renewable energy.
+              </p>
             </div>
           </div>
         </div>
@@ -245,17 +488,23 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-leaf-green py-8">
+    <footer id="contact" style="background-color: black" class="py-8">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h3 class="text-xl font-bold text-white mb-4">Ready to cooperate with us?</h3>
+          <h3 class="text-xl font-bold text-white mb-4">
+            Ready to cooperate with us?
+          </h3>
           <a href="#" class="text-white hover:text-gray-300">Contact us now</a>
         </div>
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Company</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-white hover:text-gray-300">About Us</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Services</a></li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">Services</a>
+            </li>
             <li><a href="#" class="text-white hover:text-gray-300">News</a></li>
           </ul>
         </div>
@@ -263,21 +512,41 @@
           <h3 class="text-xl font-bold text-white mb-4">Support</h3>
           <ul class="space-y-2">
             <li><a href="#" class="text-white hover:text-gray-300">FAQ</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Help Center</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Privacy Policy</a></li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">Help Center</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300"
+                >Privacy Policy</a
+              >
+            </li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-bold text-white mb-4">Follow Us</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-white hover:text-gray-300">Twitter</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Facebook</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Instagram</a></li>
+            <li>
+              <a href="#" class="text-custom hover:text-gray-300">
+                <i class="fab fa-twitter"></i> Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-custom hover:text-gray-300">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-custom hover:text-gray-300">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="text-center mt-8">
-        <p class="text-white">&copy; 2024 Energy Company. All rights reserved.</p>
+        <p class="text-white">
+          &copy; 2024 Energy Company. All rights reserved.
+        </p>
       </div>
     </footer>
 

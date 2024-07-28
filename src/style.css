@@ -161,11 +161,11 @@ nav {
 
 /* style.css */
 
-footer {
+/* footer {
   background-color: #14e174; /* Hijau daun untuk footer */
-}
+/* } */
 
-footer h3 {
+/* footer h3 {
   color: #ffffff;
 }
 
@@ -175,8 +175,16 @@ footer a {
 
 footer a:hover {
   color: #ffffff; /* Warna link saat hover */
+/* } */
+
+/* footer p {
+  color: #e0e0e0; /* Warna teks hak cipta */
+/* }  */
+
+.text-custom {
+  color: white;
 }
 
-footer p {
-  color: #e0e0e0; /* Warna teks hak cipta */
+.text-custom:hover {
+  color: gray; /* Atau warna lain sesuai keinginan Anda */
 }
